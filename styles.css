@@ -15,7 +15,8 @@ header {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    grid-template-rows: repeat(8, auto); /* 8 rows */
     gap: 20px;
     padding: 20px;
     max-width: 1200px;
