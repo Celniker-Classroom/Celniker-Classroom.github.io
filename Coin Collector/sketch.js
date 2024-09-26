@@ -167,6 +167,10 @@ function main_runner(){ // Define the main game runner
 
 	if(game){
 		background("skyblue")
+		textSize(20)
+		text("Try to hit the bronze coins", cwh+600, 25)
+		text("collect the gold coins",cwh+600, 75)
+		text("use space to fire", cwh+600, 125)
 		wall3.overlaps(coins, collect) // Collect gold coins and end gameloop if falsecoin collected
 		lasers_purge.overlaps(lasers, purge)
 		if(millis() - timer >= 3000 / coin_speed){ // updates for coins
