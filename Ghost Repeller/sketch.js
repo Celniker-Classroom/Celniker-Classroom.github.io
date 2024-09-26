@@ -5,6 +5,7 @@ let timer;
 let ball;
 let score;
 let jump;
+let highscore;
 
 function setup() {
     score = 0;
@@ -24,6 +25,7 @@ function setup() {
 	world.gravity.y = 10;
     //jump
     jump = 0;
+    highscore = 0;
 }
 
 function spawn_enemy(){
@@ -58,6 +60,9 @@ function eggcollect(player, egg){
     }else{
       egg.remove();
       score += 100
+      if(score>highscore){
+        highscore=score;
+      }
     }
 }
 
@@ -85,6 +90,7 @@ function draw() {
     text('You can double jump if it is too challenging', 1000,400);
     text('DO NOT JUMP OVER THE EGG! If you do -50 points', 900,150);
     textSize(30);
+    text('Highscore: '+ highscore, 100,50);
     text(score, canvas.w/2, 40);
     if (kb.released('w')) {
 		background(0, 0, 255);
