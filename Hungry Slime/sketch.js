@@ -1,4 +1,4 @@
-let slime, cookies, floor, mouth, vegetables, start, instructions, three, two, one;
+let slime, cookies, floor, mouth, vegetables, start, instructions, minus, three, two, one;
 let score = 0
 function setup() {
 	new Canvas(500, 500);
@@ -50,12 +50,16 @@ function setup() {
 
 
 	instructions = new Sprite();
-	instructions.scale = 0.2
+	instructions.scale = 0.23
 	instructions.img = 'images/instructions.png'
-	instructions.y = 150
-	instructions.x = 250
+	instructions.y = 65
+	instructions.x = 280
 	instructions.collider = 'n'
 
+	minus = new Sprite();
+	minus.img = 'images/minus.png'
+	minus.opacity = 0
+	minus.collider = 'n'
 
 	
 }
@@ -133,7 +137,7 @@ function draw() {
 	fill(255);
 	stroke(0);
 	strokeWeight(5);
-	text(score,25,80);
+	text(score,19,80);
 	
 	
 
@@ -156,12 +160,14 @@ function draw() {
 			{ 
 				vegetables[0].remove(); 
 				score -= 1
+				minus.opacity = 1
 			}
 		
 	 } else if (kb.released(' ')) {
 		cookies.collider = 'd';
 		vegetables.collider = 'd';
 		mouth.collider = 'n';
+		minus.opacity = 0
 	}
 
 	if (kb.pressing(' ')) {
@@ -176,34 +182,44 @@ function draw() {
 	spawn_start(490, 250, 0);
 
 	spawn_cookies(570, random(160,340), random(0,10))
-	// spawn_vegetables(160, random(165,330), random(0,10))
-	// spawn_cookies(190, random(160,340), random(0,10))
-	// spawn_cookies(200, random(160,340), random(0,10))
-	// spawn_vegetables(210, random(165,330), random(0,10))
-	// spawn_cookies(240, random(160,340), random(0,10))
-	// spawn_vegetables(243, random(165,330), random(0,10))
-	// spawn_cookies(300, random(160,340), random(0,10))
-	// spawn_cookies(350, random(160,340), random(0,10))
-	// spawn_vegetables(352, random(165,330), random(0,10))
-	// spawn_cookies(430, random(160,340), random(0,10))
-	// spawn_vegetables(435, random(165,330), random(0,10))
-	// spawn_cookies(450, random(160,340), random(0,10))
-	// spawn_cookies(500, random(160,340), random(0,10))
-	// spawn_vegetables(510, random(165,330), random(0,10))
-	// spawn_cookies(550, random(160,340), random(0,10))
-	// spawn_cookies(600, random(160,340), random(0,10))
-	// spawn_vegetables(605, random(165,330), random(0,10))
-	// spawn_cookies(650, random(160,340), random(0,10))
-	// spawn_vegetables(655, random(165,330), random(0,10))
-	// spawn_cookies(680, random(160,340), random(0,10))
-	// spawn_cookies(700, random(160,340), random(0,10))
-	// spawn_vegetables(710, random(165,330), random(0,10))
-	// spawn_cookies(750, random(160,340), random(0,10))
-	// spawn_cookies(800, random(160,340), random(0,10))
-	// spawn_vegetables(805, random(165,330), random(0,10))
-	// spawn_cookies(840, random(160,340), random(0,10))
-	
-	
-
+	spawn_vegetables(580, random(165,330), random(0,10))
+	spawn_cookies(590, random(160,340), random(0,10))
+	spawn_cookies(610, random(160,340), random(0,10))
+	spawn_vegetables(615, random(165,330), random(0,10))
+	spawn_cookies(640, random(160,340), random(0,10))
+	spawn_vegetables(643, random(165,330), random(0,10))
+	spawn_cookies(670, random(160,340), random(0,10))
+	spawn_cookies(690, random(160,340), random(0,10))
+	spawn_vegetables(702, random(165,330), random(0,10))
+	spawn_cookies(720, random(160,340), random(0,10))
+	spawn_cookies(750, random(160,340), random(0,10))
+	spawn_vegetables(735, random(165,330), random(0,10))
+	spawn_vegetables(755, random(165,330), random(0,10))
+	spawn_cookies(770, random(160,340), random(0,10))
+	spawn_cookies(775, random(160,340), random(0,10))
+	spawn_vegetables(790, random(165,330), random(0,10))
+	spawn_vegetables(800, random(165,330), random(0,10))
+	spawn_cookies(815, random(160,340), random(0,10))
+	spawn_vegetables(835, random(165,330), random(0,10))
+	spawn_cookies(850, random(160,340), random(0,10))
+	spawn_cookies(867, random(160,340), random(0,10))
+	spawn_vegetables(870, random(165,330), random(0,10))
+	spawn_cookies(897, random(160,340), random(0,10))
+	spawn_vegetables(900, random(165,330), random(0,10))
+	spawn_cookies(950, random(160,340), random(0,10))
+	spawn_cookies(970, random(160,340), random(0,10))
+	spawn_vegetables(975, random(165,330), random(0,10))
+	spawn_cookies(990, random(160,340), random(0,10))
+	spawn_cookies(995, random(160,340), random(0,10))
+	spawn_vegetables(1005, random(165,330), random(0,10))
+	spawn_cookies(1008, random(160,340), random(0,10))
+	spawn_vegetables(1015, random(165,330), random(0,10))
+	spawn_cookies(1025, random(160,340), random(0,10))
+	spawn_cookies(1040, random(160,340), random(0,10))
+	spawn_vegetables(1046, random(165,330), random(0,10))
+	spawn_cookies(1060, random(160,340), random(0,10))
+	spawn_cookies(1080, random(160,340), random(0,10))
+	spawn_vegetables(1085, random(165,330), random(0,10))
+	spawn_cookies(1200, random(160,340), random(0,10))
 
 }
