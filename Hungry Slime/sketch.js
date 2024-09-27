@@ -12,7 +12,7 @@ function setup() {
 	floor.w = 510;
 	floor.collider = 'n'
 	floor.y = 350
-	floor.img = 'images/floor.png'
+	floor.img = 'Images/floor.png'
 
 	//slime
 	slime = new Sprite(250,300);
@@ -23,7 +23,7 @@ function setup() {
 	slime.scale = 1.2
 	//cookies
 	cookies = new Group();
-	cookies.img = 'images/cookie.png';
+	cookies.img = 'Images/cookie.png';
 	cookies.d = 35;
 	cookies.collider = 'd';
 	cookies.scale = 0.3;
@@ -31,7 +31,7 @@ function setup() {
 
 	//vegetables
 	vegetables = new Group();
-	vegetables.img = 'images/vegetable.png'
+	vegetables.img = 'Images/vegetable.png'
 	vegetables.d = 35
 	vegetables.collider = 'd'
 	vegetables.scale = 0.3
@@ -51,7 +51,7 @@ function setup() {
 
 	instructions = new Sprite();
 	instructions.scale = 0.2
-	instructions.img = 'images/instructions.png'
+	instructions.img = 'Images/instructions.png'
 	instructions.y = 150
 	instructions.x = 250
 	instructions.collider = 'n'
@@ -85,7 +85,7 @@ function spawn_vegetables(spawn_time, random_x, random_y){
 		if (time == spawn_time) 
 			{ 
 				three = new Sprite();
-				three.img = 'images/three.png';
+				three.img = 'Images/three.png';
 				three.collider = 'd'
 				three.x = 250
 				three.y = 0
@@ -96,7 +96,7 @@ function spawn_vegetables(spawn_time, random_x, random_y){
 		if (time == spawn_time) 
 			{ 
 				two = new Sprite();
-				two.img = 'images/two.png';
+				two.img = 'Images/two.png';
 				two.collider = 'd'
 				two.x = 250
 				two.y = 0
@@ -107,7 +107,7 @@ function spawn_vegetables(spawn_time, random_x, random_y){
 		if (time == spawn_time) 
 			{ 
 				one = new Sprite();
-				one.img = 'images/one.png';
+				one.img = 'Images/one.png';
 				one.collider = 'd'
 				one.x = 250
 				one.y = 0
@@ -120,7 +120,7 @@ function spawn_vegetables(spawn_time, random_x, random_y){
 				start = new Sprite();
 				start.scale = 1
 				start.y = 0
-				start.img = 'images/start.png'
+				start.img = 'Images/start.png'
 		}
 }	
 
