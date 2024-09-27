@@ -11,17 +11,25 @@ let hit = 0; //did they take damage
 let slashed = 0; //yes or no if slashed
 let slashTime = 0; //slashtimer
 let blueSpeed = 5; //double click speed
+let img,slash,bg,bo,bb,pg,po,pb,pantherc;
 
 function preload() {
 	img = loadImage ('/Images/Jungle.jpg');
 	slash = loadImage ('/Images/Slash.png');
+	bg = loadImage ('/Images/GreenLeaf.png');
+	bb = loadImage ('/Images/BlueLeaf.png');
+	bo = loadImage ('/Images/OrangeLeaf.png');
+	pg = loadImage ('/Images/GreenChameleon.png');
+	pb = loadImage ('/Images/BlueChameleon.png');
+	po = loadImage ('/Images/OrangeChameleon.png');
+	pantherc = loadImage ('/Image/CalmPanther.png');
 }
 
 function setup() {
 	frameRate(60);
 	new Canvas(500, 750);
 	player = new Sprite(250, 600);
-	player.image = 'Images/GreenChameleon.png'
+	player.image = pg
 	player.scale = 0.5
 	player.d = 50;
 	player.color = 'green';
@@ -33,18 +41,18 @@ function setup() {
 	block.direction = 90;
 	block.y = -25;
 	greenB = new block.Group();
-	greenB.image = 'Images/GreenLeaf.png';
+	greenB.image = bg;
 	greenB.scale = 0.15;
 	orangeB = new block.Group();
-	orangeB.image = 'Images/OrangeLeaf.png';
+	orangeB.image = bo;
 	orangeB.scale = 0.15;
 	blueB = new block.Group();
-	blueB.image = 'Images/BlueLeaf.png';
+	blueB.image = bb;
 	blueB.scale = 0.15;
 	image (img, 0, 0);
 	panther = new Sprite(10, 600);
 	panther.rotate(3,10)
-	panther.image = 'Images/CalmPanther.png'
+	panther.image = pantherc
 	panther.scale = 0.2;
 	up = new Sprite();
 	up.x = 480;
@@ -80,15 +88,15 @@ function draw() {
 	}
 	
 	if (playerColor == 1) { //changes color
-		player.image = 'Images/GreenChameleon.png';
+		player.image = 'pg';
 	}
 
 	if (playerColor == 2) { //changes color
-		player.image = 'Images/OrangeChameleon.png';
+		player.image = 'po';
 	}
 
 	if (playerColor == 3) { //changes color
-		player.image = 'Images/BlueChameleon.png';
+		player.image = 'pb';
 	}
 
 	if(kb.released(' ')) { //makes releasing also reset time
