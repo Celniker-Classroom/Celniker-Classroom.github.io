@@ -20,7 +20,7 @@ function setup() {
 	slime.diameter = 200;
 	slime.img = 'Animation/slime1.png';
 	slime.collider = 'n';
-	slime.scale = 1.2
+	slime.scale = 3
 	//cookies
 	cookies = new Group();
 	cookies.img = 'images/cookie.png';
