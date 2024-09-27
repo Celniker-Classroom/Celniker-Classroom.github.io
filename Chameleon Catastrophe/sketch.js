@@ -14,15 +14,15 @@ let blueSpeed = 5; //double click speed
 let img,slash,bg,bo,bb,pg,po,pb,pantherc;
 
 function preload() {
-	img = loadImage ('/Images/Jungle.jpg');
-	slash = loadImage ('/Images/Slash.png');
-	bg = loadImage ('/Images/GreenLeaf.png');
-	bb = loadImage ('/Images/BlueLeaf.png');
-	bo = loadImage ('/Images/OrangeLeaf.png');
-	pg = loadImage ('/Images/GreenChameleon.png');
-	pb = loadImage ('/Images/BlueChameleon.png');
-	po = loadImage ('/Images/OrangeChameleon.png');
-	pantherc = loadImage ('/Image/CalmPanther.png');
+	img = loadImage ('Images/Jungle.jpg');
+	slash = loadImage ('Images/Slash.png');
+	bg = loadImage ('Images/GreenLeaf.png');
+	bb = loadImage ('Images/BlueLeaf.png');
+	bo = loadImage ('Images/OrangeLeaf.png');
+	pg = loadImage ('Images/GreenChameleon.png');
+	pb = loadImage ('Images/BlueChameleon.png');
+	po = loadImage ('Images/OrangeChameleon.png');
+	pantherc = loadImage ('Images/CalmPanther.png');
 }
 
 function setup() {
