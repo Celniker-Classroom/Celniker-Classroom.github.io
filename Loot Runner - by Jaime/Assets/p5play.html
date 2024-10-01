@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5500/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="http://127.0.0.1:5500/favicon.png">
+	<title>p5play</title>
+	<style>
+		html,
+		body {
+			background-color: black;
+			margin: 0;
+			padding: 0;
+			overscroll-behavior: none;
+		}
+	</style>
+<script src="./p5play_files/js" async=""></script><style>
+html, body {
+	margin: 0;
+	padding: 0;
+}
+.p5Canvas {
+	outline: none;
+	-webkit-touch-callout: none;
+	-webkit-text-size-adjust: none;
+	-webkit-user-select: none;
+	overscroll-behavior: none;
+}
+.p5-pixelated {
+	image-rendering: pixelated;
+	font-smooth: never;
+	-webkit-font-smoothing: none;
+}
+.p5-centered,
+.p5-maxed,
+.p5-fullscreen {
+  display: flex;
+	align-items: center;
+	justify-content: center;
+}
+main.p5-centered,
+main.p5-maxed,
+.p5-fullscreen {
+	height: 100vh;
+}
+main {
+	overscroll-behavior: none;
+}
+</style></head>
+
+<body>
+	<main class="p5-fullscreen"><canvas id="defaultCanvas0" class="p5Canvas" width="1920" height="1080" style="width: auto; height: 100%;" tabindex="0"></canvas></main>
+	<!-- Use p5.js (friendly errors) OR q5.js (faster) -->
+
+	<!-- ONLINE LINKS -->
+	<script src="./p5play_files/p5.min.js.download"></script>
+	<script src="./p5play_files/p5.sound.min.js.download"></script>
+	<!-- <script src="https://q5js.org/q5.js"></script> -->
+	<script src="./p5play_files/planck.min.js.download"></script>
+	<script src="./p5play_files/p5play.js.download"></script>
+
+	<!-- OFFLINE LINKS -->
+	<!--
+	<script src="node_modules/p5/lib/p5.js"></script>
+	<script src="node_modules/p5/lib/addons/p5.sound.min.js"></script>
+	<script src="node_modules/q5/q5.js"></script>
+	<script src="node_modules/p5play/planck.min.js"></script>
+	<script src="node_modules/p5play/p5play.js"></script>
+	-->
+
+	<!-- YOUR SKETCH -->
+	<script src="./p5play_files/sketch.js.download"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+</body></html>
