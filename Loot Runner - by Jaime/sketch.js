@@ -12,7 +12,7 @@ world.gravity.y = 500
 
 	// Double Jump
 	dJump = new Sprite();
-	dJump.image = '/Assets/potion.gif';
+	dJump.image = 'Assets/potion.gif';
 	dJump.y = 260;
 	dJump.x = 2200;
 	dJump.collider = 'k';
@@ -22,7 +22,7 @@ world.gravity.y = 500
 
 	// Power Jump
 	pJump = new Sprite();
-	pJump.image = '/Assets/frog2.gif';
+	pJump.image = 'Assets/frog2.gif';
 	pJump.y = 500;
 	pJump.x = 3100;
 	pJump.collider = 'k';
@@ -58,7 +58,7 @@ world.gravity.y = 500
 
 	// Trophy Image
 	t = new Sprite();
-	t.image = '/Assets/trophy.gif'
+	t.image = 'Assets/trophy.gif'
 	t.y = 315
 	t.x = 4100
 	t.collider = 'k';
@@ -72,7 +72,7 @@ world.gravity.y = 500
 
 	//Knight
 	knight = new Sprite;
-	knight.image = '/Assets/Knight.gif';
+	knight.image = 'Assets/Knight.gif';
 	knight.size = 30
 	knight.y = 512.5;
 	knight.x = 400;
@@ -88,7 +88,7 @@ world.gravity.y = 500
 
 	// Babizilla
 	m1 = new Sprite;
-	m1.image = '/Assets/dinomon.gif';
+	m1.image = 'Assets/dinomon.gif';
 	m1.size = 30;
 	m1.y = 512.5;
 	m1.x = 1800;
@@ -100,7 +100,7 @@ world.gravity.y = 500
 
 	// Babizilla 2
 	m2 = new Sprite;
-	m2.image = '/Assets/dinomon.gif';
+	m2.image = 'Assets/dinomon.gif';
 	m2.size = 30;
 	m2.y = 382.5;
 	m2.x = 3100;
