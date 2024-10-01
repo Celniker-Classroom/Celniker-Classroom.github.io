@@ -88,15 +88,15 @@ function draw() {
 	}
 	
 	if (playerColor == 1) { //changes color
-		player.image = 'pg';
+		player.image = pg;
 	}
 
 	if (playerColor == 2) { //changes color
-		player.image = 'po';
+		player.image = po;
 	}
 
 	if (playerColor == 3) { //changes color
-		player.image = 'pb';
+		player.image = pb;
 	}
 
 	if(kb.released(' ')) { //makes releasing also reset time
